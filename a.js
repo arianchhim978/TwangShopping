@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Customize the HTML structure based on your needs
             productCard.innerHTML = `
-                <h2 class='size1'>${product.title}</h2>
-                <p class='size2'>${product.description}</p>
-                <p><strong>Price:</strong> $${product.price}</p>
-                <img class='size'src="${product.image}" alt="${product.title}
-                <button class="buy-button" onclick="buyProduct('${product.title}', ${product.price})">Buy Now</button">
-            `;
+            <h2>${product.title}</h2>
+            <p>${product.description}</p>
+            <p><strong>Price:</strong> $${product.price}</p>
+            <img class='size'src="${product.image}" alt="${product.title}"><br>
+            <button class="buy-button" onclick="buyProduct('${product.title}', ${product.price})">Buy Now</button>
+        `;
 
             // Append the product card to the container
             productsContainer.appendChild(productCard);
