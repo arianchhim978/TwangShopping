@@ -35,5 +35,12 @@ body{
     .size1{
 
     }
+    .buy-button{
+        height:20px;
+        background-color:black;
+        color:white;
+
+
+    }
 }
 

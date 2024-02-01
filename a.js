@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2 class='size1'>${product.title}</h2>
                 <p class='size2'>${product.description}</p>
                 <p><strong>Price:</strong> $${product.price}</p>
-                <img class='size'src="${product.image}" alt="${product.title}">
+                <img class='size'src="${product.image}" alt="${product.title}
+                <button class="buy-button" onclick="buyProduct('${product.title}', ${product.price})">Buy Now</button">
             `;
 
             // Append the product card to the container
