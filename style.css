@@ -1,0 +1,39 @@
+#basket{
+    height:35px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#profile{
+    height: 35px;
+    margin-left:10px;
+}
+.line{
+    width: 100%;
+    border:solid 1px grey;
+    background-color: grey;
+}
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+@media (max-width:700px){
+
+
+    #products-container{
+        height:70px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .size{
+        height:130px;
+        margin-left:20px;
+       
+        margin-right:auto;
+    }
+    .size1{
+
+    }
+}
+
