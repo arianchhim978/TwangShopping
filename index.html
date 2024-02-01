@@ -6,33 +6,40 @@
     <title>Twang Shopping</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Twang Shopping </h1>
+        <h1>Twang Shopping</h1>
         <div id="container">
-        <img id='basket' src="shopping-cart.png">
-        <img id="profile" src="photo.png">
-</div>
-
-
+            <img id='basket' src="shopping-cart.png">
+            <img id="profile" src="photo.png">
+        </div>
     </header>
+    <div id='modal' class="modal">
+        <!-- Modal content goes here -->
+        <p>This is your modal content.</p>
+    </div>
+    <script>
+        let modal = document.getElementById("modal");
+        let basket = document.getElementById("basket");
+
+        basket.addEventListener("click", function() {
+            // Toggle modal visibility when clicking on the basket
+            modal.style.display = (modal.style.display === "none" || modal.style.display === "") ? "block" : "none";
+        });
+
+        // Close the modal if the user clicks outside of it
+        window.addEventListener("click", function(event) {
+            if (event.target === modal && modal.style.display === "block") {
+                modal.style.display = "none";
+            }
+        });
+    </script>
     <div class="line"></div>
-    <div id="">
-        
-    </div>
+    <div id="shoppingcart"></div>
     <div id="products-container"></div>
-
-
-    </div>
-
-
-
-
-
-
 </body>
 <script src="a.js" type="module"></script>
 </html>

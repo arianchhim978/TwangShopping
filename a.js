@@ -36,3 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error:', error));
 });
+
+function buyProduct(productTitle,productPrice){
+    totalPrice += productPrice;
+    console.log("total price is " + totalPrice)
+}
